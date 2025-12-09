@@ -38,7 +38,7 @@ export async function POST(request) {
     });
 
     if (error) {
-      console.log(`error: ${error}`)
+      console.log(`(${error.statusCode}) ${error.name}: ${error.message}`)
       return Response.json({ error }, { status: 500 });
     }
 

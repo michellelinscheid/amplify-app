@@ -13,7 +13,7 @@ import { defineAuth, secret, defineFunction } from "@aws-amplify/backend";
 export const resendApiKey = secret("RESEND_API_KEY");
 
 export const contactApi = defineFunction({
-  entry: './email_form.js',
+  entry: '/email_form.js',
   environment: {
     RESEND_API_KEY: secret('RESEND_API_KEY'),
   },
