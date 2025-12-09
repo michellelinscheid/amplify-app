@@ -1,8 +1,8 @@
 import { defineBackend } from '@aws-amplify/backend';
-import { resendApiKey, contactApi } from './auth/resource.js';
-import { data } from './data/resource.js';
+// import { data } from './data/resource.js';
+import { sayHello } from './functions/sender/resource';
 
-defineBackend({
-  contactApi,
-  data,
+export const backend = defineBackend({
+  sayHello,
+  // resendApiKey: secret('RESEND_API_KEY')
 });

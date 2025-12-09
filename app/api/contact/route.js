@@ -2,9 +2,11 @@
 import { EmailTemplate } from '../../../components/EmailTemplate';
 import { Resend } from "resend";
 import { render } from "@react-email/render";
-import { defineAuth, secret } from '@aws-amplify/backend';
+// import { defineAuth, secret } from '@aws-amplify/backend';
+import { env } from '$amplify/env/sender'; // the import is '$amplify/env/<function-name>'
 
-const resend = new Resend(secret('RESEND_API_KEY'));
+// const resend = new Resend(secret('RESEND_API_KEY'));
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request) {
   try {
@@ -12,8 +14,6 @@ export async function POST(request) {
     const { firstName, lastName, email, message } = body;
     console.log(body)
     console.log(secret('RESEND_API_KEY'))
-    // console.log("render test:", EmailTemplate({ firstName }));
-    // console.log(EmailTemplate({firstName: 'John'}))
 
     const html = await render(
       EmailTemplate({
@@ -24,16 +24,11 @@ export async function POST(request) {
       })
     );
 
-    // console.log(typeof(html))
-    // console.log(html)
-
     const { data, error } = await resend.emails.send({
-      from: `Contact Form <form@contact.sunstrand.tech>`,
-      // from: `Contact Form <onboarding@resend.dev>`,
+      // from: `Contact Form <form@contact.sunstrand.tech>`,
+      from: `Contact Form <onboarding@resend.dev>`,
       to: ["mat@sunstrand.tech"],
       subject: `Message from ${firstName} ${lastName}`,
-      // reply_to: email,
-      // react: EmailTemplate({ firstName, lastName, message, email }),
       html
     });
 
@@ -49,9 +44,4 @@ export async function POST(request) {
     return Response.json({ error }, {status: 500})
   }
 
-    // return NextResponse.json({ success: true });
-  // } catch (error) {
-  //   console.error("Error sending email:", error);
-  //   return NextResponse.json({ success: false, error: error.message }, { status: 500 });
-  // }
 }

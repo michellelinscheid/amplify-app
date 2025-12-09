@@ -1,12 +1,23 @@
 import { Providers } from "@/components/ui/providers";
-// import { Provider } from "@/components/ui/provider"
-// import { defaultSystem } from "@chakra-ui/react"
-
 import NavBar from "./navbar.js";
 import Footer from "./footer.js";
 // import { MyHeader } from "./hamburger";
-import { Geist, Geist_Mono, Birthstone_Bounce, Frank_Ruhl_Libre } from "next/font/google";
+import { Birthstone_Bounce, Frank_Ruhl_Libre } from "next/font/google";
 import "./globals.css";
+
+import { Amplify } from "aws-amplify";
+// import { Schema } from "@/amplify/data/resource";
+import { generateClient } from "aws-amplify/data";
+import outputs from "@/amplify_outputs.json";
+
+Amplify.configure(outputs);
+
+const client = generateClient();
+console.log(client)
+
+client.queries.sayHello({
+  name: "Amplify",
+})
 
 const birthstone = Birthstone_Bounce({
   subsets: ["latin"],
