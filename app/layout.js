@@ -15,9 +15,9 @@ Amplify.configure(outputs);
 const client = generateClient();
 console.log(client)
 
-client.queries.sayHello({
-  name: "Amplify",
-})
+// client.queries.sayHello({
+//   name: "Amplify",
+// })
 
 const birthstone = Birthstone_Bounce({
   subsets: ["latin"],

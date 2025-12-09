@@ -3,10 +3,10 @@ import { EmailTemplate } from '../../../components/EmailTemplate';
 import { Resend } from "resend";
 import { render } from "@react-email/render";
 // import { defineAuth, secret } from '@aws-amplify/backend';
-import { env } from '$amplify/env/sender'; // the import is '$amplify/env/<function-name>'
+// import { env } from '$amplify/env/sender'; // the import is '$amplify/env/<function-name>'
 
 // const resend = new Resend(secret('RESEND_API_KEY'));
-const resend = new Resend(process.env.RESEND_API_KEY);
+// const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request) {
   try {
@@ -24,13 +24,13 @@ export async function POST(request) {
       })
     );
 
-    const { data, error } = await resend.emails.send({
-      // from: `Contact Form <form@contact.sunstrand.tech>`,
-      from: `Contact Form <onboarding@resend.dev>`,
-      to: ["mat@sunstrand.tech"],
-      subject: `Message from ${firstName} ${lastName}`,
-      html
-    });
+    // const { data, error } = await resend.emails.send({
+    //   // from: `Contact Form <form@contact.sunstrand.tech>`,
+    //   from: `Contact Form <onboarding@resend.dev>`,
+    //   to: ["mat@sunstrand.tech"],
+    //   subject: `Message from ${firstName} ${lastName}`,
+    //   html
+    // });
 
     if (error) {
       console.log(`(${error.statusCode}) ${error.name}: ${error.message}`)
