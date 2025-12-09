@@ -1,15 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
+  reactStrictMode: true,
   experimental: {
-    optimizePackageImports: ["@chakra-ui/react"],
+    externalDir: true,
   },
 }
-
-module.exports = nextConfig
-
-// export default {
-//   experimental: {
-//     optimizePackageImports: ["@chakra-ui/react"],
-//   },
-// }
-

@@ -4,7 +4,6 @@ import { Providers } from "@/components/ui/providers";
 import { Toaster, toaster } from "@/components/ui/toaster";
 import { useState } from "react";
 import { useBreakpointValue } from "@chakra-ui/react";
-import { prefix } from "./prefix.js";
 
 import {
   Box,

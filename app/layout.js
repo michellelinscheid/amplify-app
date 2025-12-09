@@ -6,18 +6,18 @@ import { Birthstone_Bounce, Frank_Ruhl_Libre } from "next/font/google";
 import "./globals.css";
 
 import { Amplify } from "aws-amplify";
-// import { Schema } from "@/amplify/data/resource";
-import { generateClient } from "aws-amplify/data";
+// // import { Schema } from "@/amplify/data/resource";
+// import { generateClient } from "aws-amplify/data";
 import outputs from "@/amplify_outputs.json";
 
 Amplify.configure(outputs);
 
-const client = generateClient();
-console.log(client)
+// const client = generateClient();
+// console.log(client)
 
-// client.queries.sayHello({
-//   name: "Amplify",
-// })
+// // client.queries.sayHello({
+// //   name: "Amplify",
+// // })
 
 const birthstone = Birthstone_Bounce({
   subsets: ["latin"],

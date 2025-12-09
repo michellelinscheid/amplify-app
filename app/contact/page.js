@@ -2,7 +2,7 @@
 
 import ContactForm from "../email_form.js";
 
-import { Metadata, ResolvingMetadata } from 'next'
+// import { Metadata, ResolvingMetadata } from 'next'
 
 export async function generateMetadata() {
   return {
