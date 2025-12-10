@@ -5,7 +5,7 @@ export const sayHello = defineFunction({
   entry: './handler.ts',
   environment: {
     NAME: 'World',
-    // RESEND_API_KEY: secret("RESEND_API_KEY"),
+    RESEND_API_KEY: secret("RESEND_API_KEY"),
   }
 });
 

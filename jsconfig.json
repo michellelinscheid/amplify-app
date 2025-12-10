@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "$amplify/*": ["./.amplify/generated/*"]
+    }
+  },
+  "exclude": ["node_modules", ".next"]
+}

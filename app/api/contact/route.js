@@ -1,8 +1,6 @@
-// import { NextResponse } from "next/server";
 import { EmailTemplate } from '../../../components/EmailTemplate';
 import { Resend } from "resend";
 import { render } from "@react-email/render";
-// import { defineAuth, secret } from '@aws-amplify/backend';
 import { env } from '$amplify/env/sender'; // the import is '$amplify/env/<function-name>'
 
 // const resend = new Resend(secret('RESEND_API_KEY'));
@@ -42,7 +40,7 @@ export async function POST(request) {
     //   return Response.json({ error }, { status: 500 });
     // }
 
-    // return Response.json(data);
+    return Response.json(html);
   } catch(error) {
     // console.error("Caught error:", error);
     // console.error("Stringified:", JSON.stringify(error));
