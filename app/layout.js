@@ -33,18 +33,18 @@ export const metadata = {
 
 import { env } from '$amplify/env/sender'; // the import is '$amplify/env/<function-name>'
 
-let backendResponse = await client.queries.sayHello({
-  name: "Amplify",
-  sec: "Not this"
-})
+// let backendResponse = await client.queries.sayHello({
+//   name: "Amplify",
+//   sec: ""
+// })
 
 export default function RootLayout({ children }) {
-  console.log("client")
-  console.log(client)
+  // console.log("client")
+  // console.log(client)
   // console.log("env")
   // console.log(env)
-  console.log("backendResponse")
-  console.log(backendResponse);
+  // console.log("backendResponse")
+  // console.log(backendResponse);
 
   return (
     <html lang="en" suppressHydrationWarning>
