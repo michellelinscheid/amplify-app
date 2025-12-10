@@ -10,7 +10,7 @@ export async function generateMetadata() {
     description: ""
   }
 }
-
+import { env } from '$amplify/env/sender'; // the import is '$amplify/env/<function-name>'
 
 
 export default function Home() {

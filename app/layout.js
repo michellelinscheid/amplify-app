@@ -14,12 +14,6 @@ Amplify.configure(outputs);
 
 const client = generateClient();
 
-import { env } from '$amplify/env/sender'; // the import is '$amplify/env/<function-name>'
-
-// client.queries.sayHello({
-//   name: "Amplify",
-// })
-
 const birthstone = Birthstone_Bounce({
   subsets: ["latin"],
   weight: "400",
@@ -37,11 +31,21 @@ export const metadata = {
   description: "",
 };
 
+import { env } from '$amplify/env/sender'; // the import is '$amplify/env/<function-name>'
+
+let backendResponse = await client.queries.sayHello({
+  name: "Amplify",
+  sec: "Not this"
+})
+
 export default function RootLayout({ children }) {
   console.log("client")
   console.log(client)
-  console.log("env")
-  console.log(env)
+  // console.log("env")
+  // console.log(env)
+  console.log("backendResponse")
+  console.log(backendResponse);
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>

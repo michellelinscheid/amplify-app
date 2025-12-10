@@ -6,6 +6,7 @@ const schema = a.schema({
     .query()
     .arguments({
       name: a.string(),
+      sec: a.string(),
     })
     .returns(a.string())
     .authorization(allow => [allow.guest()])
