@@ -40,9 +40,9 @@ export async function POST(request) {
     );
 
     const { data, error } = await resend.emails.send({
-      from: `Contact Form <form@contact.sunstrand.tech>`,
+      from: `Contact Form <form@michelle-therapy.com>`,
       // from: `Contact Form <onboarding@resend.dev>`,
-      to: ["litsos.titus@gmail.com"],
+      to: ["MichelleLtherapy@gmail.com"],
       subject: `Message from ${firstName} ${lastName}`,
       html
     });
