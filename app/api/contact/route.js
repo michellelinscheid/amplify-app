@@ -1,13 +1,8 @@
 import { EmailTemplate } from '../../../components/EmailTemplate';
 import { Resend } from "resend";
 import { render } from "@react-email/render";
-// import { env } from '$amplify/env/sender'; // the import is '$amplify/env/<function-name>'
-
-// const resend = new Resend(secret('RESEND_API_KEY'));
-// const resend = new Resend(process.env.RESEND_API_KEY);
 
 import { Amplify } from "aws-amplify";
-// import { Schema } from "@/amplify/data/resource";
 import { generateClient } from "aws-amplify/data";
 import outputs from "@/amplify_outputs.json";
 
@@ -24,8 +19,6 @@ export async function POST(request) {
   
   
   try {
-    console.log("bR")
-    console.log(backendResponse)
     const resend = new Resend(backendResponse.data);
     const body = await request.json();
     const { firstName, lastName, email, message } = body;

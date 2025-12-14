@@ -59,10 +59,10 @@ export default function ContactForm() {
       console.error(err)
       toaster.create({
         title: "Error",
-        description: "Something went wrong. Please try again later.",
+        description: "Something went wrong. Please reach out to me directly at MichelleLTherapy@gmail.com, or try again later.",
         closable: true,
         type: "error",
-        duration: 5000,
+        duration: 60000,
       })
     } finally {
       setIsSubmitting(false);
