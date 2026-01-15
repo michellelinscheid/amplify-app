@@ -30,7 +30,7 @@ export default function Home() {
           Do you accept health insurance?
           </h1>
           <p className="answer">
-          Yes! I am in network with Aetna, Banner Aetna, BCBS, Cigna, Optum, Oscar, UMR, United Healthcare, and several smaller health insurance plans. Prior to your first appointment, I will confirm your benefits for therapy services.
+          Yes! I am in network with Aetna, BCBS, Cigna, Optum, Oscar, UMR, United Healthcare, and several smaller health insurance plans. Prior to your first appointment, I will confirm your benefits for therapy services.
           </p><p></p>
           <h1 className="question text-2xl">
           What is your availability?
