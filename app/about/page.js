@@ -41,7 +41,7 @@ export default function Home() {
           Hi, I’m Michelle Linscheid, LCSW, and I am a mental health therapist in Arizona.
           </span>
           <span className="pb-3">
-          Do you ever feel like your mind won’t slow down, or that memories from the past keep affecting your present? You’re not alone. I work with adults across Arizona, virtually,  who are navigating trauma, anxiety, and overwhelming life stress, and I offer a space where you can simply be yourself.
+          Do you ever feel like your mind won’t slow down, or that memories from the past keep affecting your present? You’re not alone. I work with adults across Arizona, virtually,  who are navigating trauma, anxiety, and overwhelming life stress. I offer a space where you can simply be yourself.
           </span>
           <span className="pb-3">
           Many of my clients come to therapy feeling stuck or exhausted from coping on their own — whether it’s with self-harm, substance use, intrusive thoughts, or disordered eating. Together, we’ll explore the ways you’ve learned to survive and gently build new strategies that support your healing and peace of mind.
@@ -53,7 +53,7 @@ export default function Home() {
           You don’t have to go through this alone. Whether you’re looking for trauma therapy, parts work, somatic therapy, or a supportive space to reconnect with yourself, I’ll walk beside you as you heal and grow.
           </span>
           <span className="pb-3">
-          Reach out today to schedule your free consultation — I’d be honored to support your journey.
+          Reach out today to schedule your free consultation. I’d be honored to support your journey.
           </span>
         </div>
       </main>
