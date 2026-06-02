@@ -44,16 +44,16 @@ export default function Home() {
           Do you ever feel like your mind won’t slow down, or that memories from the past keep affecting your present? You’re not alone. I work with adults across Arizona, virtually,  who are navigating trauma, anxiety, and overwhelming life stress. I offer a space where you can simply be yourself.
           </span>
           <span className="pb-3">
-          Many of my clients come to therapy feeling stuck or exhausted from coping on their own — whether it’s with self-harm, substance use, intrusive thoughts, or disordered eating. Together, we’ll explore the ways you’ve learned to survive and gently build new strategies that support your healing and peace of mind.
+          Many of my clients come to therapy feeling stuck or exhausted from coping on their own — whether it’s with self-harm, substance use, dissociation, intrusive thoughts, or disordered eating. Together, we’ll explore the ways you’ve learned to survive and gently build new strategies that support your healing and peace of mind.
           </span>
           <span className="pb-3">
-          My approach is collaborative, compassionate, and body-aware. In our sessions, we’ll focus on understanding how your thoughts, emotions, and physical experiences connect. I use somatic therapy, blending talk therapy with mindfulness, as well as parts work to help you feel more present, grounded, and safe in your body. The goal isn’t to “stay positive” all the time, it’s to give you tools and insight so you can handle life’s challenges with clarity and confidence.
+          My approach is collaborative and compassionate. My clients would tell you I create a safe place for healing. In our sessions, we’ll focus on understanding how your thoughts, emotions, and physical experiences connect. I use parts work and somatic therapy to help you feel more present, grounded, and safe in your body. The goal isn’t to “stay positive” all the time, it’s to give you tools and insight so you can handle life’s challenges and heal.
           </span>
           <span className="pb-3">
           You don’t have to go through this alone. Whether you’re looking for trauma therapy, parts work, somatic therapy, or a supportive space to reconnect with yourself, I’ll walk beside you as you heal and grow.
           </span>
           <span className="pb-3">
-          Reach out today to schedule your free consultation. I’d be honored to support your journey.
+          Reach out today to schedule your free consultation.
           </span>
         </div>
       </main>
