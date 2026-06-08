@@ -22,7 +22,7 @@ function Disclaimer() {
       Michelle Linscheid Therapy is not a crisis service. 
       If this is a mental health crisis, please call or text 
       The National Suicide and Crisis Lifeline &#39;<a style={{textDecorationLine: "underline"}} href="rel:+988">988</a>&#39; 
-      or if an emergency call &#39;<a style={{textDecorationLine: "underline"}} href="tel:+911">911</a>&#39;.
+      or if an emergency, call &#39;<a style={{textDecorationLine: "underline"}} href="tel:+911">911</a>&#39;.
     </div>
   );
 }
