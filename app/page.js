@@ -26,7 +26,7 @@ export default function Home() {
       </ div>
       <div className="sm:basis-1/3 flex flex-shrink gap-[32px] items-center">
         <Image
-          src={prefix + "/Cece.webp"}
+          src={prefix + "/TreeCe.webp"}
           alt="Cece"
           className={"object-cover max-h-1/2"}
           style={{
